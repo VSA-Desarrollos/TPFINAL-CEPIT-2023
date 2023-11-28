@@ -18,7 +18,7 @@ import { AvisosService } from 'src/avisos/aviso.service';
     TypeOrmModule.forFeature([Usuario, Profesor, Alumno, Message, Aviso]),
     JwtModule.register({
       secret: 'ProgramadorFullStack2023', // Tu clave secreta aquí
-      signOptions: { expiresIn: '5m' },
+      signOptions: { expiresIn: '1h' },
     }),
   ],
   controllers: [UsuarioController],
